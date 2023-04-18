@@ -1,0 +1,50 @@
+{
+    "nombre": "Germán",
+    "apellido": "Barrios",
+    "acercademi": "Full Stack Developer Jr.",
+    "educacion": [
+        {
+            "id": 0,
+            "inicio": "Junio de 2022",
+            "fin": "Agosto de 2022",
+            "nivel": "Se Programar",
+            "img": "url"
+        },
+        {
+            "id": 1,
+            "inicio": "Octubre de 2022",
+            "fin": "Mayo de 2023",
+            "nivel": "Yo Programo",
+            "img": "url"
+        }
+    ],
+    "frase": "lorem Ipsum en DATOS.JSON",
+
+    "skills": [
+        {
+            "id": 1,
+            "habilidad": "HTML",
+            "porcentaje": "80",
+            "color": "bg-success"
+        },
+        {
+            "id": 2,
+            "habilidad": "CSS",
+            "porcentaje": "70",
+            "color": "bg-info"
+        },
+        {
+            "id": 3,
+            "habilidad": "Bootstrap",
+            "porcentaje": "90",
+            "color": "bg-warning"
+        },
+        {
+            "id": 4,
+            "habilidad": "Java",
+            "porcentaje": "50",
+            "color": "bg-danger"
+        }
+    ]
+
+}

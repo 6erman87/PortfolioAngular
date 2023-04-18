@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+*{
+    font-family: 'Sofia Sans', sans-serif;  
+}
+
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+
+.responsive {
+    height: auto;
+}
+
+section.dashboard, section.panel{
+    margin-top: 9rem;
+}

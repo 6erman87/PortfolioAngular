@@ -1,0 +1,66 @@
+/* redes */
+i.fa-brands.fa-facebook.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+
+}
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: rgb(0, 30, 255);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+
+i.fa-brands.fa-square-instagram.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+}
+i.fa-brands.fa-square-instagram.fa-2xl:hover{
+    color: rgb(200, 107, 0);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+
+i.fa-brands.fa-linkedin.fa-2xl{
+    color: #ffffff;
+    transition: 300ms ease-in-out;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: #5373b1;
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+
+}
+
+
+i.fa-solid.fa-user-lock.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+}
+i.fa-solid.fa-user-lock.fa-2xl:hover{
+    color: rgb(95, 95, 95);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+i.fa-solid.fa-user.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+}
+i.fa-solid.fa-user.fa-2xl:hover{
+    color: rgb(95, 95, 95);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+
+i.fa-solid.fa-lock.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+}
+i.fa-solid.fa-lock.fa-2xl:hover{
+    color: rgb(95, 95, 95);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}

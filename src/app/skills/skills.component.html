@@ -1,0 +1,119 @@
+<br>
+<section id="myskills" class="skills">
+
+  <div class="container text-center">
+    <div class="row d-flex justify-content-center">
+      
+      <h2>Hard Skills</h2>
+
+      <div class="col-md-8"><br>
+
+  <!-- Iteración sobre la variable de instancia y presentación de datos mediante interpolación -->      
+  <div class="progress mb-3" *ngFor="let skill of skills">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" [ngClass]="skill.color" role="progressbar" aria-label="Animated striped example" 
+    aria-valuenow="80" aria-valuemin="80" aria-valuemax="100" [style.width.%]="skill.porcentaje"> {{skill.porcentaje}}% {{skill.habilidad}} Completado 
+    </div>
+  </div>
+
+
+
+  <!-- <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-label="Animated striped example" 
+    style="width: 70%" aria-valuenow="70" aria-valuemin="70" aria-valuemax="100"> 70% CSS Completado 
+    </div>
+  </div><br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar" aria-label="Animated striped example" 
+    style="width: 90%" aria-valuenow="90" aria-valuemin="90" aria-valuemax="100"> 90% Bootstrap Completado 
+    </div>
+  </div><br>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-label="Animated striped example" 
+    style="width: 50%" aria-valuenow="50" aria-valuemin="50" aria-valuemax="100"> %50 Java Completado 
+    </div>
+  </div> -->
+ 
+
+
+
+
+<!-- <section id="myskills" class="skills">
+  
+    <div class="container text-center">
+    <div class="row d-flex justify-content-center">
+      <h2>Hard Skills</h2>
+  
+      <div class="col-md-4">     
+  
+          <div class="progress blue">
+
+
+            <div *ngFor="let skill of miData.skills" [ngClass]=skill.porcentaje class="progress"></div>
+
+
+            <span class="progress-left">
+                              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+                              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value"><i class="fa-brands fa-html5"></i> 90%</div>
+          </div>
+          
+  
+          <div class="progress green">
+            <span class="progress-left">
+                              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+                              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value"><i class="fa-brands fa-css3-alt"></i> 80%</div>
+          </div>
+          
+            <div class="progress yellow">
+              <span class="progress-left">
+                              <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                              <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value"><i class="fa-brands fa-angular"></i> 37.5%</div>
+            </div>
+  
+            <div class="progress red">
+              <span class="progress-left">
+                              <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                              <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value"><i class="fa-brands fa-square-js"></i> 50%</div>
+            </div>
+   
+    <h2>Soft Skills</h2>
+  
+      <div class="col-md-4">     
+  
+          <div class="progress purple">
+            <span class="progress-left">
+                              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+                              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">Inglés</div>
+          </div>
+  
+          <div class="progress orange">
+              <span class="progress-left">
+                              <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                              <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value"> 50%</div>
+            </div>
+    </div>
+  </div>
+</section> -->

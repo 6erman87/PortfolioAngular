@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+*{
+    font-family: 'Sofia Sans', sans-serif;  
+}
+
+/* acercade */
+section.acercade{
+    margin-top: -5rem;
+    margin-left: 1em;
+    margin-right: 1em; 
+}
