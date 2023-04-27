@@ -1,8 +1,8 @@
-i.fa-solid.fa-user-lock.fa-beat.fa-xl{
+i.fa-solid.fa-door-open.fa-beat.fa-xl{
     color: rgb(255, 255, 255);
 }
 
-i.fa-solid.fa-user-lock.fa-beat.fa-xl:hover{
+i.fa-solid.fa-door-open.fa-beat.fa-xl:hover{
     color: #ff0000;
     transition: 300ms ease-in-out;
 

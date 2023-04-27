@@ -1,0 +1,11 @@
+*{
+    background: black;
+    margin: 0%;
+    padding: 2%;
+    /* box-sizing: border-box; */
+}
+
+.footerfont {
+    color: white;
+    text-align: center;
+}

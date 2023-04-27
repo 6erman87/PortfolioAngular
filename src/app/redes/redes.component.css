@@ -32,35 +32,3 @@ i.fa-brands.fa-linkedin.fa-2xl:hover{
     transform: scale(1.20);
 
 }
-
-
-i.fa-solid.fa-user-lock.fa-2xl{
-    color: rgb(255, 255, 255);
-    transition: 300ms ease-in-out;
-}
-i.fa-solid.fa-user-lock.fa-2xl:hover{
-    color: rgb(95, 95, 95);
-    transition: 300ms ease-in-out;
-    transform: scale(1.20);
-}
-
-i.fa-solid.fa-user.fa-2xl{
-    color: rgb(255, 255, 255);
-    transition: 300ms ease-in-out;
-}
-i.fa-solid.fa-user.fa-2xl:hover{
-    color: rgb(95, 95, 95);
-    transition: 300ms ease-in-out;
-    transform: scale(1.20);
-}
-
-
-i.fa-solid.fa-lock.fa-2xl{
-    color: rgb(255, 255, 255);
-    transition: 300ms ease-in-out;
-}
-i.fa-solid.fa-lock.fa-2xl:hover{
-    color: rgb(95, 95, 95);
-    transition: 300ms ease-in-out;
-    transform: scale(1.20);
-}

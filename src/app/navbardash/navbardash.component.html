@@ -1,12 +1,15 @@
 <header>
+
     <nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-           <a class="navbar-brand" href="#">
-           <img src="assets\img\BannerArgPro.png" alt="Bootstrap" width="150" height="50">
-           </a>
-           <!-- redes sociales -->
-           <app-redes></app-redes>
-           <!-- acá va el botón LOG OUT, se hace con JS para cerrar sesión -->
-        </div>
+       <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+             <img src="assets\img\BannerArgPro.png" alt="Bootstrap" width="150" height="50">
+          </a>
+          <!-- redes sociales -->
+          <div class="list-group list-group-horizontal">
+             <app-redes></app-redes>
+             <app-buttonlogout></app-buttonlogout>
+          </div>
+       </div>
     </nav>
-</header>
+ </header>

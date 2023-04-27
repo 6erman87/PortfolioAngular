@@ -15,24 +15,30 @@ import { IndexComponent } from './index/index.component';
 import { ButtonloginComponent } from './buttonlogin/buttonlogin.component';
 import { NavbardashComponent } from './navbardash/navbardash.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormsModule } from '@angular/forms';
+import { ButtonlogoutComponent } from './buttonlogout/buttonlogout.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    LoginComponent,
-    RedesComponent,
-    BannerComponent,
     AcercadeComponent,
+    BannerComponent,
+    ButtonloginComponent,
+    ButtonlogoutComponent,
     DashboardComponent,
     ErrorComponent,
     IndexComponent,
-    ButtonloginComponent,
+    LoginComponent,
+    NavbarComponent,
     NavbardashComponent,
+    RedesComponent,
     SkillsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule
   ],

@@ -4,6 +4,18 @@
     font-family: 'Sofia Sans', sans-serif;  
 }
 
+.nombres {
+    color:rgb(255, 255, 255)
+}
+
+.profesion {
+    color:rgb(170, 170, 170)
+}
+
+.sobremi { 
+    color:rgb(214, 214, 214)
+}
+
 /* acercade */
 section.acercade{
     margin-top: -5rem;
