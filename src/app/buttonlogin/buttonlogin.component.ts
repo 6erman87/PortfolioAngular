@@ -1,33 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-buttonlogin',
   templateUrl: './buttonlogin.component.html',
   styleUrls: ['./buttonlogin.component.css']
 })
-export class ButtonloginComponent {
+export class ButtonloginComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
 
 
-
-//Esto va en el LOGIN.COMPONENT o en el BUTTONLOGIN.COMPONENT
-
-// MODIFICACIÓN HECHA 24.04.23 (20:13hs) para que acepte 'login'
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-buttonlogin',
-//   templateUrl: './buttonlogin.component.html',
-//   styleUrls: ['./buttonlogin.component.css']
-// })
-// export class ButtonloginComponent {
-
-// }
-
-
-
-
+// CON EL LOGIN MODAL EN EL HTML
 // import { Component, OnInit } from '@angular/core';
 // import { Router } from '@angular/router';
 // import { TokenService } from '../services/token.service';
@@ -40,25 +28,24 @@ export class ButtonloginComponent {
 // export class ButtonloginComponent implements OnInit {
 //   isLogged = false;
 
-//   constructor(private router:Router, private tokenService:TokenService) {    
-//   }
+//   constructor(private router: Router, private tokenService: TokenService) {
 
+//   }
 //   ngOnInit(): void {
-//     if(this.tokenService.getToken()) {
-//       this.isLogged = true;  
+//     if(this.tokenService.getToken()){
+//       this.isLogged=true;
 //     }else{
-//     this.isLogged = false;
+//       this.isLogged = false;
 //     }
-    
 //   }
-  
-//   // onLogOut(): void {
-//   //   this.tokenService.logout();
-//   //   window.location.reload();  
-//   // }
 
+//   onLogOut():void{
+//     this.tokenService.logout();
+//     window.location.reload();
+//   }
 
-//   // login(){
-//   //   this.router.navigate(['/login'])
-//   // }
+//   login(){
+//     this.router.navigate([''])
+//   }  
+
 // }

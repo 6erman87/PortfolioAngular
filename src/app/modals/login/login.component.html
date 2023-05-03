@@ -17,7 +17,7 @@
                <div class="mb-3 row">
                   <label for="nombreUsuario" class="col-sm-2 col-form-label">Usuario</label>
                   <div class="col-sm-10">
-                     <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+                     <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
                   </div>
                </div>
 
@@ -36,13 +36,20 @@
              -->
 
             <div class="modal-footer">
-               <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged" data-bs-dismiss="modal">Inicio sesión</button>
+               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Inicio sesión</button>
             </div>
+
+
+            <!-- Con el click LOGIN -->
+            <!-- <div class="modal-footer">
+               <button type="button" class="btn btn-primary" (click)="login()" data-bs-dismiss="modal">Inicio sesión</button>
+            </div> -->
+
 
          </form>
 
          <div class="container text-center">
-            <p class="mb-2">¿No tienes cuenta? <a href="#!" class="text-black-50 fw-bold">Regístrate aquí</a>
+            <p class="mb-2">¿No tienes cuenta? <a class="text-black-50 fw-bold" routerLink="/registro">Regístrate aquí</a>
             </p>
          </div>
 

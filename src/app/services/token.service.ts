@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
 
+// SE UTILIZA PARA SABER SI ESTAMOS O NO LOGUEADOS
+// Y PARA OBTENER LOS PRIVILEGIOS DEL USU
+
 const TOKEN_KEY = 'AuthToken';
-const USERNAME_KEY = 'AuthUsername';
+const USERNAME_KEY = 'AuthUserName';
 const AUTHORITIES_KEY = 'AuthAuthorities';
 
 @Injectable({
@@ -46,7 +49,7 @@ export class TokenService {
     return this.roles;
   }
 
-  public logout(): void {
+  public logOut(): void {
     window.sessionStorage.clear();
 
   }

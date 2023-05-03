@@ -5,3 +5,5 @@ export class NuevoUsuario {
     password!: string;
     authorities!: string[];
 }
+// com.porfolio.BackEnd.security.Dto
+// NuevoUsuario.java
