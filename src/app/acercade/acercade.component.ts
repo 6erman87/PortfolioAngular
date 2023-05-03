@@ -8,14 +8,14 @@ import { PersonaService } from '../services/persona.service';
   templateUrl: './acercade.component.html',
   styleUrls: ['./acercade.component.css']
 })
-export class AcercadeComponent {
+export class AcercadeComponent implements OnInit {
 // nombre = 'acercade';
   persona: persona = new persona("","","","","");
 
 // acá va el SERVICIO (ej. persona.Service: Persona.Service)
-  constructor(
-    
-    public personaService: PersonaService) { }
+  constructor(    
+    public personaService: PersonaService
+    ) { }
   
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})

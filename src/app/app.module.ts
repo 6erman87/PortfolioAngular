@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './modals/login/login.component';
 import { RedesComponent } from './redes/redes.component';
 import { BannerComponent } from './banner/banner.component';
 import { AcercadeComponent } from './acercade/acercade.component';
@@ -14,10 +13,18 @@ import { ErrorComponent } from './error/error.component';
 import { IndexComponent } from './index/index.component';
 import { ButtonloginComponent } from './buttonlogin/buttonlogin.component';
 import { NavbardashComponent } from './navbardash/navbardash.component';
-import { SkillsComponent } from './skills/skills.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonlogoutComponent } from './buttonlogout/buttonlogout.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewExperienciaComponent } from './experiencia/new-experiencia.component';
+import { LoginComponent } from './modals/login/login.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EditExperienciaComponent } from './experiencia/edit-experiencia.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
+import { EducacionComponent } from './educacion/educacion.component';
+import { NeweducacionComponent } from './educacion/neweducacion.component';
+import { EditeducacionComponent } from './educacion/editeducacion.component';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +42,12 @@ import { FooterComponent } from './footer/footer.component';
     RedesComponent,
     SkillsComponent,
     FooterComponent,
+    ExperienciaComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    EducacionComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +55,10 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     HttpClientModule
   ],
+  // providers: [
+  //   interceptorProvider
+  // ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
