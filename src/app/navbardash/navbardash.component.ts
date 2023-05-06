@@ -1,22 +1,22 @@
 
-import { Component, OnInit } from '@angular/core';
-import { TokenService } from '../services/token.service';
+// import { Component, OnInit } from '@angular/core';
+// import { TokenService } from '../services/token.service';
 
-@Component({
-  selector: 'app-navbardash',
-  templateUrl: './navbardash.component.html',
-  styleUrls: ['./navbardash.component.css']
-})
+// @Component({
+//   selector: 'app-navbardash',
+//   templateUrl: './navbardash.component.html',
+//   styleUrls: ['./navbardash.component.css']
+// })
 
-export class NavbardashComponent {
-
-
-  constructor(private tokenService: TokenService) { }
+// export class NavbardashComponent {
 
 
-  onLogOut(): void {
-    this.tokenService.logOut();
-    window.location.reload();
-  }
+//   constructor(private tokenService: TokenService) { }
 
-}  
+
+//   onLogOut(): void {
+//     this.tokenService.logOut();
+//     window.location.reload();
+//   }
+
+// }  

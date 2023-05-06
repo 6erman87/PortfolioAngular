@@ -5,7 +5,7 @@ i.fa-brands.fa-facebook.fa-2xl{
 
 }
 i.fa-brands.fa-facebook.fa-2xl:hover{
-    color: rgb(0, 30, 255);
+    color: rgb(0, 158, 255);
     transition: 300ms ease-in-out;
     transform: scale(1.20);
 }
@@ -30,5 +30,25 @@ i.fa-brands.fa-linkedin.fa-2xl:hover{
     color: #5373b1;
     transition: 300ms ease-in-out;
     transform: scale(1.20);
+
+}
+
+i.fa-solid.fa-user-lock.fa-beat.fa-xl{
+    color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-lock.fa-beat.fa-xl:hover{
+    color: #ff0000;
+    transition: 300ms ease-in-out;
+
+}
+
+i.fa-solid.fa-door-open.fa-beat.fa-xl{
+    color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-door-open.fa-beat.fa-xl:hover{
+    color: #ff0000;
+    transition: 300ms ease-in-out;
 
 }

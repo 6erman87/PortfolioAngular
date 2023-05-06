@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from '../model/persona.model';
+
 // import { DatosService } from '../services/datos.service';
+
+import { Persona } from '../model/persona.model';
+import { TokenService } from '../services/token.service';
 import { PersonaService } from '../services/persona.service';
 
 @Component({
@@ -10,19 +13,32 @@ import { PersonaService } from '../services/persona.service';
 })
 export class AcercadeComponent implements OnInit {
 // nombre = 'acercade';
-  persona: persona = new persona("","","","","");
+  persona: Persona = null;
 
 // acá va el SERVICIO (ej. persona.Service: Persona.Service)
   constructor(    
-    public personaService: PersonaService
+    public personaService: PersonaService,
+    private tokenService: TokenService
     ) { }
+
+    isLogged = false;
+
   
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
+    this.cargarPersona();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
-
-}
   
+  cargarPersona(): void {
+    this.personaService.detail(1).subscribe(data =>
+      {this.persona = data}
+    )
+  }
+}
 
 // Inicializar variables de instancia para almacenar los datos con los que trata el Servicio  
 

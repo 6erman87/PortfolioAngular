@@ -3,7 +3,6 @@ import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from '../services/s-experiencia.service';
 import { TokenService } from '../services/token.service';
 
-
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -11,9 +10,11 @@ import { TokenService } from '../services/token.service';
 })
 export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
-    SExperienciaService: any;
+    // SExperienciaService: any;
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
+  constructor(
+    private sExperiencia: SExperienciaService,
+    private tokenService: TokenService) { }
 
   isLogged = false;
 
@@ -27,8 +28,12 @@ export class ExperienciaComponent implements OnInit {
   }
 
   cargarExperiencia(): void {
-    this.SExperienciaService.lista().subscribe
-    ((data: Experiencia[]) => { this.expe = data; })
+    this.sExperiencia.lista().subscribe(
+    {
+      next: data =>{ 
+        this.expe = data
+      }
+    });
   }
 
   delete(id?: number) {
