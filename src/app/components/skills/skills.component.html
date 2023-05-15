@@ -1,0 +1,76 @@
+<section id="myskills" class="skills">
+  <div class="container">
+    <div class="row">
+      <h4 class="ms-5 mt-3 titulo">Hard & Soft skills</h4>
+
+      <div class="col ms-5">
+        <button
+          type="button"
+          class="btn btn-light"
+          routerLink="/newskill"
+          *ngIf="isLogged"
+        >
+          Nueva Skill
+          <i class="fa-solid fa-pencil fa-beat"></i>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="titulo text-center col-sm-4 col-md-4 mb-5 col-lg-3 circulo"
+        *ngFor="let skill of skill"
+      >
+        <h4>{{ skill.nombre }}</h4>
+
+        <circle-progress
+          [percent]="skill.porcentaje"
+          [maxPercent]="100"
+          [startFromZero]="true"
+          [radius]="50"
+          [imageSrc]="''"
+          [titleFontSize]="'30'"
+          [titleColor]="'#A4CFD6'"
+          [showTitle]="true"
+          [showImage]="false"
+          [showBackground]="true"
+          [showInnerStroke]="true"
+          [backgroundColor]="''"
+          [backgroundOpacity]="3"
+          [backgroundGradientStopColor]="'red'"
+          [imageHeight]="70"
+          [imageWidth]="70"
+          [showUnits]="true"
+          [unitsColor]="'#A4CFD6'"
+          [unitsFontSize]="'20'"
+          [showSubtitle]="false"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="6"
+          [outerStrokeColor]="'#A4CFD6'"
+          [innerStrokeColor]="'#FFFFFF'"
+          [animation]="true"
+          [animationDuration]="1000"
+        >
+          ></circle-progress
+        >
+
+        <div>
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-light"
+              routerLink="/editskill/{{ skill.id }}"
+            >
+              Editar
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+              Eliminar
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </td>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

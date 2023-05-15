@@ -12,11 +12,11 @@ import { Persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = environment.URL + 'personas/';
+  URL = 'https://backendgnb.onrender.com/personas/';
 
   constructor(private httpClient : HttpClient) { }
 
-  public lista(): Observable<Persona[]>{
+  public list(): Observable<Persona[]>{
     return this.httpClient.get<Persona[]>(this.URL + 'lista');
   }
 

@@ -1,0 +1,75 @@
+<div class="vh-100 body">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-secondary" style="border-radius: 2rem">
+          <div class="card-body p-4 text-center">
+            <img src="/assets/img/skills.png" width="50%" />
+            <div class="mb-md-1 mt-md-1 pb-1">
+
+              <form [formGroup]="form" (ngSubmit)="onCreate()" name="nombreForm">
+
+                <div class="form-group titulo">
+                  <label for="skillNombre">
+                    <h5>
+                      <p class="text-dark-50 mt-3 mb-3">Agregar Habilidad</p>
+                    </h5>
+                  </label>
+                  <input
+                  class="form-control"
+                  type="text"                  
+                  id="skillNombre"
+                  placeholder="Habilidad"
+                  name="nombre"
+                  formControlName="nombre"
+                  [(ngModel)]="nombre" 
+                  
+                  [ngClass]="{'is-invalid':
+                  Nombre.errors && Nombre.touched, 'is-valid': !Nombre.errors && Nombre.touched}">   
+                         
+                <div *ngIf="Nombre.errors && Nombre.touched">
+                  <p *ngIf="Nombre.hasError('required')" class="text-warning">
+                    La habilidad es requerida
+                  </p>
+                </div>
+              </div>
+
+                <div class="form-group titulo">
+                  <label for="skillPorcentaje"class="form-label">
+                    <h5>
+                      <p class="text-dark-50 mt-3 mb-3">
+                        Agregar nivel de aprendizaje (escala 0 a 100)
+                      </p>
+                    </h5>
+                  </label>
+                  <input
+                  type="number"
+                  min="0" max="100" 
+                  id="skillPorcentaje"
+                  formControlName="porcentaje" 
+                  [(ngModel)]="porcentaje" [ngClass]="{'is-invalid': Porcentaje.errors && Porcentaje.touched, 
+                  'is-valid': !Porcentaje.errors && Porcentaje.touched}">
+                  <div *ngIf="Porcentaje.errors && Porcentaje.touched">
+                    <p *ngIf="Porcentaje.hasError('required')" class="text-warning">
+                      El porcentaje es requerido.
+                    </p>
+          
+                    <p *ngIf="Porcentaje.hasError('min')" class="text-danger">
+                      El porcentaje mínimo es 0.
+                    </p>
+          
+                    <p *ngIf="Porcentaje.hasError('max')" class="text-danger">
+                      El porcentaje máximo es 100.
+                    </p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-light" (click)="limpiar()">Limpiar</button>
+                <button type="submit" class="btn btn-danger btnLogin">Agregar habilidad</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

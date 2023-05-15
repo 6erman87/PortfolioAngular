@@ -1,9 +1,0 @@
-/* barra de navegacion */
-.navbar.navbar-expand-lg.bg-body-tertiary{
-    background: rgb(0,245,255);
-    background: linear-gradient(180deg, rgba(0,245,255,1) 0%, rgba(255,255,255,1) 80%);
-}
-
-.list-group{
-    --bs-list-group-bg: transparent;
-}

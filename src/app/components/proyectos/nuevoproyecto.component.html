@@ -1,0 +1,145 @@
+<div class="vh-100 body">
+  <div class="container py-3 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-6">
+        <div class="card bg-secondary" style="border-radius: 2rem">
+          <div class="card-body text-center">
+            <img src="/assets/img/proyect.png" width="25%" />
+
+            <form
+              [formGroup]="form"
+              (ngSubmit)="onEnviar($event)"
+              name="proyectoForm"
+            >
+              <div class="form-group titulo">
+                <label for="proyectoNombre">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">Nombre del proyecto</p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="proyectoNombre"
+                  placeholder="Nombre"
+                  name="nombreP"
+                  formControlName="nombreP"
+                  [(ngModel)]="nombreP"
+                  required
+                  [ngClass]="{
+                    'is-invalid': NombreP.errors && NombreP.touched,
+                    'is-valid': !NombreP.errors && NombreP.touched
+                  }"
+                />
+
+                <div *ngIf="NombreP.errors && NombreP.touched">
+                  <p *ngIf="NombreP.hasError('required')" class="text-warning">
+                    El lugar de trabajo es requerido
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-group titulo">
+                <label for="proyectoDescripcion">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">
+                      Descripción del proyecto
+                    </p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="proyectoDescripcion"
+                  placeholder="Proyecto"
+                  name="descripcionP"
+                  formControlName="descripcionP"
+                  [(ngModel)]="descripcionP"
+                  required
+                  [ngClass]="{
+                    'is-invalid': DescripcionP.errors && DescripcionP.touched,
+                    'is-valid': !DescripcionP.errors && DescripcionP.touched
+                  }"
+                />
+
+                <div *ngIf="DescripcionP.errors && DescripcionP.touched">
+                  <p
+                    *ngIf="DescripcionP.hasError('required')"
+                    class="text-warning"
+                  >
+                    La descripción es requerida
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-group titulo">
+                <label for="proyectoFecha">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">Fecha de realización</p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="proyectoFecha"
+                  placeholder="Fecha"
+                  name="fechaP"
+                  formControlName="fechaP"
+                  [(ngModel)]="fechaP"
+                  required
+                  [ngClass]="{
+                    'is-invalid': FechaP.errors && FechaP.touched,
+                    'is-valid': !FechaP.errors && FechaP.touched
+                  }"
+                />
+
+                <div *ngIf="FechaP.errors && FechaP.touched">
+                  <p *ngIf="FechaP.hasError('required')" class="text-warning">
+                    La fecha de realización es requerida
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-group titulo">
+                <label for="proyectoWeb">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">
+                      Dirección web del proyecto
+                    </p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="proyectoWeb"
+                  placeholder="Página web"
+                  name="linkP"
+                  formControlName="linkP"
+                  [(ngModel)]="linkP"
+                  required
+                  [ngClass]="{
+                    'is-invalid': LinkP.errors && LinkP.touched,
+                    'is-valid': !LinkP.errors && LinkP.touched
+                  }"
+                />
+
+                <div *ngIf="LinkP.errors && LinkP.touched">
+                  <p *ngIf="LinkP.hasError('required')" class="text-warning">
+                    La fecha de realización es requerida
+                  </p>
+                </div>
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn btn-light" (click)="limpiar()">
+                  Limpiar
+                </button>
+                <button type="submit" class="btn btn-danger btnLogin">
+                  Agregar experiencia
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -7,14 +7,14 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class SExperienciaService {
-  URL = environment.URL + 'explab/';
 
+export class SExperienciaService {
+  URL = 'https://backendgnb.onrender.com/explab/';
   // expURL = 'https://backend-mgb.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Experiencia[]>{
+  public list(): Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
   }
 
@@ -29,6 +29,10 @@ export class SExperienciaService {
   public update(id: number, experiencia: Experiencia): Observable<any>{
     return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
   }
+
+  // public update(experiencia: Experiencia): Observable<any>{
+  //   return this.httpClient.put<any>(this.URL + 'update', experiencia);
+  // }
 
   public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);

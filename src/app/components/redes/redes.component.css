@@ -1,0 +1,65 @@
+/* redes */
+i.fa-brands.fa-facebook.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+
+}
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: rgb(0, 158, 255);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+
+i.fa-brands.fa-square-instagram.fa-2xl{
+    color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+}
+i.fa-brands.fa-square-instagram.fa-2xl:hover{
+    color: rgb(200, 107, 0);
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+}
+
+
+i.fa-brands.fa-linkedin.fa-2xl{
+    color: #ffffff;
+    transition: 300ms ease-in-out;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: #5373b1;
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+
+}
+
+i.fa-brands.fa-github.fa-2xl{
+    color: #ffffff;
+    transition: 300ms ease-in-out;
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+    color: #620f92;
+    transition: 300ms ease-in-out;
+    transform: scale(1.20);
+
+}
+
+i.fa-solid.fa-user-lock.fa-beat.fa-xl{
+    color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-user-lock.fa-beat.fa-xl:hover{
+    color: #ff0000;
+    transition: 300ms ease-in-out;
+
+}
+
+i.fa-solid.fa-door-open.fa-beat.fa-xl{
+    color: rgb(255, 255, 255);
+}
+
+i.fa-solid.fa-door-open.fa-beat.fa-xl:hover{
+    color: #ff0000;
+    transition: 300ms ease-in-out;
+
+}

@@ -1,0 +1,15 @@
+*{
+    background: black;
+    margin: 0%;
+    padding: 1%;
+}
+
+.footerfont {
+    color: white;
+    text-align: center;
+}
+
+section.acercade{
+    margin-top: 3rem;   
+
+}

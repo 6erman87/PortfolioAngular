@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <h4 class="ms-5 mt-3 titulo">Educación</h4>
+
+    <div class="col ms-5">
+      <button
+        type="button"
+        class="btn btn-light"
+        routerLink="/nuevaedu"
+        *ngIf="isLogged"
+      >
+        Agregar Educación
+        <i class="fa-solid fa-pencil fa-beat"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="titulo container" *ngFor="let Educacion of educacion">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-11">
+        <table class="table titulo2">
+          <tbody>
+            <tr>
+              <td>
+                <h5>
+                  {{ Educacion.nombreD }}
+                </h5> 
+                <h6>              
+                  {{ Educacion.descripcionD }} 
+                </h6>   
+                  <h6>            
+                  {{ Educacion.periodoD }}  
+                  </h6>               
+              </td>
+
+              <td class="text-end">
+                <button
+                  class="btn btn-light"
+                  routerLink="/editedu/{{ Educacion.id }}"
+                  *ngIf="isLogged"
+                >
+                  Editar
+                  <i class="fa-solid fa-pencil"></i>
+                </button>
+
+                <button
+                  class="btn btn-danger"
+                  (click)="delete(Educacion.id)"
+                  *ngIf="isLogged"
+                >
+                  Eliminar
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

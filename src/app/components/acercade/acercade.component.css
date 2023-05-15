@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+@media (min-width: 300px), (max-width: 600px){
+    #fotoperfil{
+        border-radius: '';
+    }
+}
+
+.nombres {
+    color:rgb(255, 255, 255)
+}
+
+.profesion {
+    color:rgb(170, 170, 170)
+}
+
+.sobremi { 
+    color:rgb(214, 214, 214)
+}
+
+/* acercade */
+section.acercade{
+    margin-top: -5rem;
+    margin-left: 1em;
+    margin-right: 1em; 
+}
+
+.row{
+    padding: 20px;
+}
+.titulo {
+    color:rgb(255, 255, 255)
+}
+.titulo2 {
+    color:rgb(164, 207, 214)
+}
+
+h1, h2, h3{
+    display: inline;
+}

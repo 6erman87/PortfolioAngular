@@ -1,0 +1,120 @@
+<div class="vh-100 body">
+  <div class="container py-3 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8">
+        <div class="card bg-secondary" style="border-radius: 2rem">
+          <div class="card-body text-center">
+            <img src="/assets/img/study.png" width="15%" />
+
+            <form
+              [formGroup]="form"
+              (ngSubmit)="onEnviar($event)"
+              name="educacionForm"
+            >
+              <div class="form-group titulo">
+                <label for="nombreD">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">
+                      Nombre de la institución educativa
+                    </p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="nombreD"
+                  placeholder="Institución"
+                  name="nombreD"
+                  formControlName="nombreD"
+                  [(ngModel)]="nombreD"
+                  required
+                  [ngClass]="{
+                    'is-invalid': NombreD.errors && NombreD.touched,
+                    'is-valid': !NombreD.errors && NombreD.touched
+                  }"
+                />
+
+                <div *ngIf="NombreD.errors && NombreD.touched">
+                  <p *ngIf="NombreD.hasError('required')" class="text-warning">
+                    El nombre de la institución es requerido
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-group titulo">
+                <label for="descripcionD">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">
+                      Descripción de sus estudios
+                    </p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="descripcionD"
+                  placeholder="Descripción"
+                  name="descripcionD"
+                  formControlName="descripcionD"
+                  [(ngModel)]="descripcionD"
+                  required
+                  [ngClass]="{
+                    'is-invalid': DescripcionD.errors && DescripcionD.touched,
+                    'is-valid': !DescripcionD.errors && DescripcionD.touched
+                  }"
+                />
+
+                <div *ngIf="DescripcionD.errors && DescripcionD.touched">
+                  <p
+                    *ngIf="DescripcionD.hasError('required')"
+                    class="text-warning"
+                  >
+                    La descripción es requerida
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-group titulo">
+                <label for="periodoD">
+                  <h5>
+                    <p class="text-dark-50 mt-3 mb-3">Periodo de tiempo</p>
+                  </h5>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="periodoD"
+                  placeholder="Periodo"
+                  name="periodoD"
+                  formControlName="periodoD"
+                  [(ngModel)]="periodoD"
+                  required
+                  required
+                  [ngClass]="{
+                    'is-invalid': PeriodoD.errors && PeriodoD.touched,
+                    'is-valid': !PeriodoD.errors && PeriodoD.touched
+                  }"
+                />
+
+                <div *ngIf="PeriodoD.errors && PeriodoD.touched">
+                  <p *ngIf="PeriodoD.hasError('required')" class="text-warning">
+                    El periodo es requerido
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <button type="button" class="btn btn-light" (click)="limpiar()">
+                  Limpiar
+                </button>
+                <button type="submit" class="btn btn-danger btnLogin">
+                  Agregar educación
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

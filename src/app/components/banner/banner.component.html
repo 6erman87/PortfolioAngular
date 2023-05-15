@@ -1,0 +1,15 @@
+<!-- <header class="banner"></header> -->
+
+<header class="banner">
+    <div class="row">
+        <button class="btn btn-light" routerLink="/editbanner/1" *ngIf="isLogged">
+            <h5>
+                <b>
+                    Editar banner
+                  <i class="fa-solid fa-pencil fa-beat"></i>
+                </b>
+              </h5>
+        </button>
+    <img src="{{ persona.banner }}" id="fotobanner">
+    </div>
+</header>

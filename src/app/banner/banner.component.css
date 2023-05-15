@@ -1,9 +1,0 @@
-/* banner */
-.banner{
-    margin-top: 4rem;
-    background-image: url(/assets/img/banner.jpg);
-    height: auto !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 25vh;
-}

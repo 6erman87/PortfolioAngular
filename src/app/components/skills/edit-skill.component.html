@@ -1,0 +1,53 @@
+<div class="vh-100 body">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-secondary" style="border-radius: 2rem">
+          <div class="card-body p-4 text-center">
+            <h2 class="fw-bold mb-3 mt-3 text-uppercase titulo">
+              EDITAR SKILL
+            </h2>
+            <img src="/assets/img/edit.png" width="30%" />
+            <div class="mb-md-1 mt-md-1 pb-1">
+
+              <div class="container" *ngIf="skill">
+                <div class="row">
+                  <div>
+
+                    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                      <div class="form-group titulo">
+                        <label for="nombre">
+                          <h5>
+                            <p class="text-dark-50 mt-3 mb-3">Habilidad</p>
+                          </h5>
+                        </label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" 
+                        [(ngModel)]="skill.nombre" required/>
+                      </div>
+                      
+                      <div class="form-group titulo">
+                        <label for="porcentaje">
+                          <h5>
+                            <p class="text-dark-50 mt-3 mb-3">Nivel de aprendizaje en %</p>
+                          </h5>
+                        </label>
+                        
+                        <input type="text" class="form-control" id="porcentaje" name="porcentaje"
+                          [(ngModel)]="skill.porcentaje" required />
+                      </div>
+                      
+                      <button class="btn btn-danger mt-4">
+                        Actualizar
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

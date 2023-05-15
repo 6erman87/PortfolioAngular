@@ -7,13 +7,14 @@ import { Proyectos } from '../model/proyectos';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProyectosService {
-  URL = environment.URL + 'proyecto/';
+  URL = 'https://backendgnb.onrender.com/proyecto/';
 
 
   constructor(private httpClient : HttpClient) { }
 
-  public lista(): Observable<Proyectos[]>{
+  public list(): Observable<Proyectos[]>{
     return this.httpClient.get<Proyectos[]>(this.URL + 'lista');
   }
 

@@ -7,13 +7,14 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
+
 export class EducacionService {
-  URL = environment.URL + 'educacion/';
+  URL = 'https://backendgnb.onrender.com/educacion/';
 
 
   constructor(private httpClient : HttpClient) { }
 
-  public lista(): Observable<Educacion[]>{
+  public list(): Observable<Educacion[]>{
     return this.httpClient.get<Educacion[]>(this.URL + 'lista');
   }
 
